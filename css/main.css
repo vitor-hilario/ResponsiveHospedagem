@@ -1,0 +1,83 @@
+.main-cols{
+    background-color: rgb(240, 240, 240);
+    padding: 60px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.main-cols-flex{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.cols-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 20%;
+    margin: 0 1.6%;
+}
+
+.cols-about img{
+    width: 40px;
+    height: auto;
+}
+
+.cols-about h1{
+    margin: 20px 0;
+    color: #652e78;
+    text-align: center;
+}
+
+.cols-about p{
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 1180px){
+    .cols-about{
+        max-width: 40%;
+    }
+
+    .main-cols-flex{
+        max-width: 100%;
+        justify-content: space-around;
+    }
+
+    .cols-about:nth-child(3){
+       margin: 50px 25px 0;
+    }
+    .cols-about:nth-child(4){
+       margin: 50px 25px 0;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .main-cols{
+        padding: 25px 0;
+    }
+
+    .main-cols-flex{
+        max-width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cols-about:nth-child(3){
+        margin: 15px 0;
+     }
+     .cols-about:nth-child(4){
+        margin: 15px 0;
+     }
+
+    .cols-about{
+        max-width: 87%;
+        margin: 15px 0;
+    }
+    
+}    
